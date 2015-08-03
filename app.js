@@ -38,10 +38,8 @@ app.use(function(req, res, next) {
 	req.session.t1 = req.session.t2 || 0;
 	req.session.t2 = new Date().getTime();
 	tiempo_inactivo = req.session.t2-req.session.t1;
-	console.log(tiempo_inactivo)
 	
-	if((req.session.user) && (tiempo_inactivo > 10000)){
-		console.log("Excedido tiempo de sesión: " + (tiempo_inactivo/1000) + " s");
+	if((req.session.user) && (tiempo_inactivo > 60000)){
 		delete req.session.user;
 		res.redirect(req.session.redir.toString());
 	}
