@@ -33,3 +33,9 @@ Curso para personas con conocimientos medios de programación y de diseño Web, 
 - **[EJS](https://github.com/mde/ejs)** - _Embedded JavaScript templates_
 - :octocat: **[GitHub](https://github.com/)** - Repositorio y control de versiones
 - **[heroku](https://www.heroku.com)** - Despligue de la [aplicación](https://quiz-glaseca.herokuapp.com/)
+- 
+
+### Usuarios
+
++ admin:1234
++ pepe:5678
