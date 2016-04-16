@@ -1,6 +1,8 @@
 # Quiz
 ## Desarrollo de servicios en la nube con HTML5, Javascript y node.js
 
+Curso impartido por profesorado de la Universidad Politécnica de Madrid.
+
 Repositorio de la aplicación de desarrollo del curso en [Miriada X](https://www.miriadax.net/), con las siguientes carácterísticas:
 
 + Lista de preguntas
