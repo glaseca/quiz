@@ -23,9 +23,9 @@ exports.index = function(req, res, next) {
 	}
 	
 	models.Quiz.findAll({
-		where: sequelize.where(
-			sequelize.fn('upper', sequelize.col('pregunta')), 
-			sequelize.fn('upper', search)
+		where: models.sequelize.where(
+			models.sequelize.fn('upper', models.sequelize.col('pregunta')), 
+			models.sequelize.fn('upper', search)
 		),
 		order: 'pregunta ASC'}
 	).then(function(quizes){
