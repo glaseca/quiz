@@ -20,7 +20,7 @@ Otras funciones previstas pero no implementadas actualmente:
 * Creación y gestión de usuarios
 * Roles y permisos
 * Carga de imágenes para apoyo de preguntas
-* Busqueda por categoría
+* Búsqueda por categoría
 * etc ...
 
 ### Herramientas de desarrollo
