@@ -23,8 +23,10 @@ exports.index = function(req, res, next) {
 	}
 	
 	models.Quiz.findAll({
-		where:["pregunta like ?",
-		search.toUpperCase()],
+		where: sequelize.where(
+			sequelize.fn('upper', sequelize.col('pregunta')), 
+			sequelize.fn('upper', search)
+		),
 		order: 'pregunta ASC'}
 	).then(function(quizes){
 		res.render('quizes/index', { quizes: quizes, errors: []});
