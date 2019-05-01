@@ -23,7 +23,7 @@ exports.index = function(req, res, next) {
 	}
 	
 	models.Quiz.findAll({
-		where:["upper(pregunta) like ?",
+		where:["pregunta like ?",
 		search.toUpperCase()],
 		order: 'pregunta ASC'}
 	).then(function(quizes){
