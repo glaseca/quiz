@@ -15,7 +15,7 @@ exports.load = function(req, res, next, quizId) {
 };
 
 // GET /quizes
-exports.index = function(req, res) {
+exports.index = function(req, res, next) {
 	var search = "%";
 	if(req.query.search !== undefined){
 		search = "%" + req.query.search + "%";
@@ -81,7 +81,7 @@ exports.update = function(req, res){
 };
 
 // DELETE /quizes/:id
-exports.destroy = function(req, res){
+exports.destroy = function(req, res, next){
 	req.quiz.destroy().then(function(){
 		res.redirect('/quizes');
 	}).catch(function(error){next(error)});
